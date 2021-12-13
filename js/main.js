@@ -8,15 +8,11 @@
     // const n = Math.floor(Math.random() * results.length);
     // btn.textContent = results[n];
     // btn.textContent = results[Math.floor(Math.random() * results.length)];
-    const n = Math.random();
-    btn.textContent = n ;
-    if(n < 0.3) {
-      btn.textContent = 'けー';
-    } else if (n < 0.6){
-      btn.textContent = 'みみょみ';
-    } else {
-      btn.textContent = 'さやんご';
-    }
+    const results = ['けー','みみょみ','さやんご','はちゃん'] ;
+  
+    
+    btn.textContent = results.splice(Math.floor(Math.random() * results.length),1)[0] ;
+    
   
 
   // switch(n) {
@@ -31,5 +27,5 @@
   //     break;
   // }
 
-})
+});
 }
